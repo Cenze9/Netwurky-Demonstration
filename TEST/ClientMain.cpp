@@ -116,7 +116,8 @@ int main(int argc, char* argv[]) {
 
 	//start communication
 	while (Running) {
-
+		std::string msg;
+		
 		ReadConsoleInput(hIn,
 			&InRec,
 			1,
@@ -148,16 +149,20 @@ int main(int argc, char* argv[]) {
 			exit(EXIT_FAILURE);
 		}
 
-		Sleep(100);
+		Sleep(10);
 		msgbuf_mtx.lock();
 		while (!msgbuf.empty()) {
 			std::string s = msgbuf.front();
 			msgbuf.pop_front();
 			printf("\n");
-			printf("%s\n", s.c_str());
+			if (msgbuf.empty()) 
+			{
+				printf("%s\n", s.c_str());
+			}
 			printf("\n");
 		}
 		msgbuf_mtx.unlock();
+		msg.clear();
 	}
 
 	closesocket(s);

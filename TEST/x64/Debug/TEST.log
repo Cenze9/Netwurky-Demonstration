@@ -1,0 +1,6 @@
+﻿  ClientMain.cpp
+c:\users\henrileh\documents\projicts\network\netwurky-demonstration\test\clientmain.cpp(92): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+c:\users\henrileh\documents\projicts\network\netwurky-demonstration\test\clientmain.cpp(147): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\henrileh\documents\projicts\network\netwurky-demonstration\test\clientmain.cpp(51): warning C4101: 'buf': unreferenced local variable
+  TEST.vcxproj -> C:\Users\HENRILEH\Documents\Projicts\Network\Netwurky-Demonstration\x64\Debug\Client.exe
+  TEST.vcxproj -> C:\Users\HENRILEH\Documents\Projicts\Network\Netwurky-Demonstration\x64\Debug\Client.pdb (Partial PDB)
